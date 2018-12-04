@@ -2,7 +2,7 @@
 Proyecto web para la actualizacion de página 2019
 
 ![template](https://img.shields.io/badge/status-En%20Progreso-red.svg)
-![techs](https://img.shields.io/badge/techs-javascript—html—css—yellow.svg)
+![techs](https://img.shields.io/badge/tech-HTML--JS--CSS-yellow.svg)
 
 ---
 
