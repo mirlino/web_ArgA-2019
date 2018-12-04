@@ -18,6 +18,6 @@ La Página está estructurada utilizando
 `javascript`,`css`,`hmtl`.
 
 
-### Tecnologías usadas
+### Muestra de pagina live
 
 Status página live de presentación: [`Plantilla`](https://mirlino.github.io/web_ArgA/)
