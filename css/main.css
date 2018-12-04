@@ -1,5 +1,10 @@
 /*@import url('../font/Purista_Bold.otf');*/
 
+@font-face {
+  font-family: "Purista_Bold";
+  src: url("../font/Purista\ Bold.otf");
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -44,7 +49,7 @@ body {
   font-size: 25px;
   /*line-height: 25px;*/
   /*border-radius: 4px;*/
-  font-family: 'Purista', sans-serif;
+  font-family: 'Purista_Bold', sans-serif;
   
 }
 
@@ -169,14 +174,14 @@ ul, ol {
 .slider .caption h1 {
   font-size: 50px;
   margin-bottom: 10px;
-  font-family: 'Purista', sans-serif;
+  font-family: 'Purista_Bold', sans-serif;
   font-weight: bold;
 }
 
 .slider .caption p {
   margin-top: 0px;
   font-size: 25px;
-  font-family: 'Purista', sans-serif;
+  font-family: 'Purista_Bold', sans-serif;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
