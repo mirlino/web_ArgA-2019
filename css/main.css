@@ -173,6 +173,16 @@ ul, ol {
 
 }
 
+.left:hover {
+  color: rgb(182, 181, 181);
+
+}
+
+.right:hover {
+  color: rgb(182, 181, 181);
+
+}
+
 .right {
   right: 10px;
 }

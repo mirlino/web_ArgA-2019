@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var imgItems = $('.slider li').length; //Numero de slides
     var imgPos = 1;
-    
+        
     // Agregando paginacion
     for(i = 1; i<= imgItems; i++){
         $('.pagination').append('<li><i class="fas fa-circle"></i></li>');
