@@ -14,5 +14,5 @@ Proyecto: plantilla web para la actualización de página en 2019.
 
 ### Tecnologías usadas
 
-La aplicación está estructurada utilizando
+La Página está estructurada utilizando
 `javascript`,`css`,`hmtl`.
