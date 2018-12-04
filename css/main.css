@@ -54,7 +54,7 @@ body {
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
+.header a .img {
   font-size: 25px;
   font-weight: bold;
 }
@@ -112,6 +112,10 @@ ul, ol {
   width: 100%;
 }
 
+.slider li{
+  overflow: hidden;
+}
+
 .slider li img{
   width: 100%;
 }
@@ -160,10 +164,22 @@ ul, ol {
 
   color: rgb(109, 109, 109);
   font-size: 50px;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .left {
   left: 10px;
+
+}
+
+.left:hover {
+  color: rgb(182, 181, 181);
+
+}
+
+.right:hover {
+  color: rgb(182, 181, 181);
 
 }
 
@@ -180,8 +196,39 @@ ul, ol {
 
 .slider .caption p {
   margin-top: 0px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Purista_Bold', sans-serif;
+}
+
+@media screen and (max-width: 990px){
+  .slider .caption p{
+    display: none;
+  }
+
+  .slider .caption h1{
+    font-size: 35px;
+  }
+
+  .header a .img {
+    height: 50%;
+    font-weight: bold;
+  }
+
+  .header-right a {
+    text-align: left;
+    text-decoration: none;
+    padding: 40px 10px;
+    font-size: 15px;
+    font-family: 'Purista_Bold', sans-serif;
+  }
+
+  .left, .right {
+    font-size: 30px;
+  }
+
+  .slider li img{
+    width: 990px;
+  }
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
