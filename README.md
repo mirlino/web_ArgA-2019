@@ -20,5 +20,4 @@ La Página está estructurada utilizando
 
 ### Tecnologías usadas
 
-Para construir la base de datos, 
 Status página live de presentación: [`Plantilla`](https://mirlino.github.io/web_ArgA/)
