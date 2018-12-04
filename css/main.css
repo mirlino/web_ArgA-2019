@@ -19,7 +19,8 @@ body {
   background-repeat: repeat;
 }
 
-/* Style the header with a grey background and some padding */
+/*==================================INICIO DEL HEADER=============================*/
+
 .main-head {
   overflow: hidden;
   display: block;
@@ -34,8 +35,6 @@ body {
   padding: 10px 20px;
   text-align: left;
   float: left;
-    
-    
     
 }
   
@@ -97,7 +96,21 @@ body {
   color: white;
 }
 
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 900px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+/*==================================FIN DEL HEADER=============================*/
 
+
+/*==================================INICIO DEL SLIDE=============================*/
 ul, ol {
   list-style: none;
 
@@ -230,15 +243,7 @@ ul, ol {
     width: 990px;
   }
 }
+/*==================================FIN DEL SLIDE=============================*/
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-}
+
+
