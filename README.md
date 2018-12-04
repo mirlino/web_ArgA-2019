@@ -16,3 +16,9 @@ Proyecto: plantilla web para la actualización de página en 2019.
 
 La Página está estructurada utilizando
 `javascript`,`css`,`hmtl`.
+
+
+### Tecnologías usadas
+
+Para construir la base de datos, 
+Status página live de presentación: [`Plantilla`](https://mirlino.github.io/web_ArgA/)
