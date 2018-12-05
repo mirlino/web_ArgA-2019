@@ -73,12 +73,25 @@ body {
 
 /* Float the link section to the right */
 .header-right {
+  background-image: url('../img/WhiteLabel.png');
+  background-repeat: no-repeat;
+  background-size: 1000px;
   overflow: hidden;
-  background-color: #FFF;
-  padding: 0px 70px;
+  /*background-color: #FFF;*/
+  padding: 0px 90px;
   text-align: left;
   float: right;
+  
       
+}
+.header-right .whiteFond {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  width: 1400px;
+  height: 100%;
+  top: 0;
+  margin-left: 26.4%;
 }
 
 .header-right a {
@@ -146,6 +159,7 @@ ul, ol {
 }
 
 .slider .caption {
+
   position: absolute;
   width: 100%;
   height: 100%;
