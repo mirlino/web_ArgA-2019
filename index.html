@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <!--link href="font/Purista Bold.otf" rel="stylesheet"--> 
         <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
@@ -14,9 +16,10 @@
         <title>ArgA 2018</title>
     </head>
     <body>
+        
         <div class="main-head">
             <div class="header">
-                <a href="#default" class="logo"><img src="img/logo.png"></a>
+                <a href="#default" class="logo"><img src="img/logo.svg" height="60" width="105"></a>
             </div> 
             <div class="header-right">
                 <a class="active" href="#home">INICIO</a>
@@ -27,56 +30,52 @@
                 <a href="https://foro.clanarga.com.ar/index.php">FORO</a>
             </div>
         </div>
-
-        <div class="slideshow">
-            <ul class="slider">
-                <li>
-                    <img src="img/fondo.png" alt="">
-                    <img class="lucid" src="img/lucid.png" alt="">
-                    <section class="caption">
-                        <h1>CON UNA <span style="color:#43A6DF">FUERTE COMUNIDAD</span></h1>
-                        <p>Experimenta, simula, comparte y aprende junto a nosotros.</p> 
-                        <p>verdadera experiencia te espera.</p>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/fondoDos.png" alt="">
-                    <img class="lucid" src="img/lucid.png" alt="">
-                    <section class="caption">
-                        <h1>PUEDES VISITARNOS</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut at aperiam ea dolore hic!</p>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/fondoTres.png" alt="">
-                    <img class="lucid" src="img/lucid.png" alt="">
-                    <section class="caption">
-                        <h1>CONOCER MAS SOBRE ARGA</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut at aperiam ea dolore hic!</p>
-                    </section>
-                </li>
-                <li>
-                    <img src="img/fondoCuatro.png" alt="">
-                    <img class="lucid" src="img/lucid.png" alt="">
-                    <section class="caption">
-                        <h1>NUEVA PAGINA</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut at aperiam ea dolore hic!</p>
-                    </section>
-                </li>
-            </ul>
-            <ol class="pagination">
-                
-            </ol>
-
-            <div class="left">
-                <i class="fas fa-chevron-left"></i>
-            </div>
-            <div class="right">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-        </div>
         
+        <div class ="wrapper row-slider">
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    
+                    <img src="img/fondo.png" class="d-block w-100" alt="...">
+                    
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fondoDos.png" class="d-block w-100" alt="...">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fondoTres.png" class="d-block w-100" alt="...">
+                    
+                    </div>
+                </div>
+            </div>
+        
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="js/jquery.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
