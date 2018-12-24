@@ -19,6 +19,7 @@ body {
   background-repeat: repeat;
 }
 
+
 /*==================================INICIO DEL HEADER=============================*/
 
 .main-head {
@@ -38,7 +39,7 @@ body {
     
 }
   
-/* Style the header links */
+/*Style the header links*/
 .header a {
   float: left;
   color: black;
@@ -46,10 +47,15 @@ body {
   padding: 5px;
   text-decoration: none;
   font-size: 25px;
-  /*line-height: 25px;*/
-  /*border-radius: 4px;*/
+  line-height: 25px;
+  border-radius: 4px;
   font-family: 'Purista_Bold', sans-serif;
   
+}
+
+
+.bg-bread {
+  background-color: #fff !important;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -100,7 +106,7 @@ body {
   text-align: left;
   text-decoration: none;
   padding: 35px 10px;
-  font-size: 25px;
+  font-size: 18px;
   font-family: 'Purista_Bold', sans-serif;
 }
 
@@ -110,7 +116,7 @@ body {
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
   .header a {
     float: none;
     display: block;
@@ -124,6 +130,7 @@ body {
 
 
 /*==================================INICIO DEL SLIDE=============================*/
+/*
 ul, ol {
   list-style: none;
 
@@ -240,37 +247,228 @@ ul, ol {
   font-family: 'Purista_Bold', sans-serif;
 }
 
-@media screen and (max-width: 990px){
-  .slider .caption p{
-    display: none;
+/*BOOTSTRAP*/
+.bg-colored {
+  background-color: #43A6DF;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size:cover;
+  background-size: cover;
+}
+
+.carousel-caption{
+  bottom: 270px;
+}
+
+.carousel-indicators{
+  top: 20px;
+  
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: 'Purista_Bold', sans-serif;
+  letter-spacing: 2px;
+  margin-top: 25px;
+
+}
+
+.carousel-caption p{
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  font-family: 'Purista_Bold', sans-serif;
+  line-height: 1.9;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.row-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.row-slider::before {
+  right: -50%;
+}
+
+.row-slider::before {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  display: block;
+  height: 100.1%;
+  position: absolute;
+  right: -60%;
+  transform: skewX(-22deg);
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-control-next {
+  z-index: 2;
+}
+
+
+/*PHONES*/
+@media screen and (max-width: 850px){
+  
+  .header {
+    padding: 20px;
+    float: none;
+    padding: 10px 90px;
+    text-align: center;
   }
 
-  .slider .caption h1{
-    font-size: 35px;
+  .header a{
+    float: none;
+    text-align: center;
   }
+    
+  
+  /* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #43A6DF;
+  color: black;
+}
 
-  .header a .img {
-    height: 50%;
-    font-weight: bold;
+/* Style the active/current link*/
+.header-right a.active {
+  background-color: #F8B853;
+  color: white;
+  background-size: 100%;
+}
+
+/* Float the link section to the right */
+.header-right {
+  position: relative;
+  background-color: #FFF;
+  background-size: 1000px;
+  padding: 0px 115px;
+  text-align: left;
+  float: left;
+  touch-action: pan-y;
+  content: inherit;
+  
+      
+}
+
+.header-right a {
+  float: left;
+  color: #43A6DF;
+  text-align: center;
+  text-decoration: none;
+  padding: 35px 14px;
+  margin: 0px 5px;
+  font-size: 18px;
+  font-family: 'Purista_Bold', sans-serif;
+}
+
+.header-right a:hover{
+  background-color: #F8B853;
+  color: white;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.row-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.row-slider::before {
+  right: -50%;
+}
+
+.row-slider::before {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  display: block;
+  height: auto;
+  position: absolute;
+  right: -60%;
+  transform: skewX(-22deg);
+  width: 100%;
+  z-index: 1;
+}
+
+.carousel-control-next {
+  z-index: 2;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+  .header-right {
+    position: relative;
+    background-color: #FFF;
+    background-size: 1000px;
+    padding-right: 23%;
+    text-align: center;
+    float: left;
+        
+        
   }
 
   .header-right a {
-    text-align: left;
+    float: left;
+    text-align: center;
     text-decoration: none;
-    padding: 40px 10px;
-    font-size: 15px;
+    padding: 20px 5px;
+    margin: 0px 2px;
+    font-size: 18px;
     font-family: 'Purista_Bold', sans-serif;
   }
 
-  .left, .right {
-    font-size: 30px;
-  }
 
-  .slider li img{
-    width: 990px;
-  }
 }
-/*==================================FIN DEL SLIDE=============================*/
+
+@media screen and (max-width: 320px){
+
+  .header {
+    
+      /* Reverse the axis of the header, making it vertical. */
+      flex-direction: column;
+      
+      /* Align items to the begining (the left) of the header. */
+      align-items: flex-start;
+      
+  }
+
+  .header a{
+    float: none;
+    text-align: left;
+  }
 
 
+  .header-right {
+    position: relative;
+    background-color: #FFF;
+    background-size: 1000px;
+    padding-right: 2%;
+    text-align: left;
+    float: left;
+        
+        
+  }
 
+  .header-right a {
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px 5px;
+    margin: 0px 2px;
+    font-size: 14px;
+    font-family: 'Purista_Bold', sans-serif;
+  }
+
+
+}
