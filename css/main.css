@@ -33,7 +33,7 @@ body {
 .header {
   overflow: hidden;
   background-color: #43A6DF;
-  padding: 10px 5px;
+  padding: 10px 25px;
   text-align: left;
   float: left;
     
@@ -316,7 +316,7 @@ ul, ol {
 
 
 /*PHONES*/
-@media screen and (max-width: 850px){
+@media screen and (max-width: 855px){
   
   .header {
     padding: 20px;
