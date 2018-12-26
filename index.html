@@ -10,13 +10,33 @@
         <!-- Material Design Bootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> 
+        
         <!--link href="font/Purista Bold.otf" rel="stylesheet"--> 
         <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
 
         <title>ArgA 2018</title>
+        <style>
+            .my-container {
+                border: 1px solid green;
+            }
+
+            .my-row {
+                border: 3px solid red;
+            }
+
+            .my-col {
+                border: 3px dotted blue;
+            }
+
+        </style>
+
     </head>
     <body>
-        
+        <!--NAVEGADOR CABECERA-->
+        <!--
         <div class="main-head">
             <div class="header">
                 <a href="#default" class="logo"><img src="img/logo.svg" height="60" width="105"></a>
@@ -30,45 +50,215 @@
                 <a href="https://foro.clanarga.com.ar/index.php">FORO</a>
             </div>
         </div>
-        
-        <div class ="wrapper row-slider">
+    -->
+        <!--ACTUALIZACION a BOOTSTRAP 4-->
+        <div class="">
+            <!--ACTUALIZACION CABECERA CON BOOTSTRAP 4-->
+            <div class="row d-flex align-content-start flex-wrap my-row row-bgNav">
+                <div class="col-lg-6 my-bgOne my-col col-md-12">
+                    <nav class="imgLogo">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" width="105" height="70" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-lg-6 my-col my-bgTwo col-md-12 ">
+                    <ul class="nav justify-content-end order-md-12 aling-self-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/about.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/information.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="app/blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="app/gallery.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FORO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--SLIDE-->
             
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    
-                    <img src="img/fondo.png" class="d-block w-100" alt="...">
-                    
-                    
-                </div>
-                <div class="carousel-item">
-                    <img src="img/fondoDos.png" class="d-block w-100" alt="...">
-                    
-                </div>
-                <div class="carousel-item">
-                    <img src="img/fondoTres.png" class="d-block w-100" alt="...">
-                    
+            <div class="row my-row">
+                <div class="col-12 my-col">
+                                
+                        
+                    <div class="slide-window">
+                        <div class ="wrapper row-slider"><!--capa-->
+                            <div class="slide-wrapper" style="width: 300%;">
+                                <div class="slide">
+                                <a href="#" target="_blank">
+                                    <div class="slide-image" style="background-image: url('img/fondoDos.png')">
+                                    </div>
+                                    <div class="slide-caption">
+                                    <h2>INICIO 1</h2>
+                                    <p>Always keep the sun in your heart.</p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="slide">
+                                <a href="#" target="_blank">
+                                    <div class="slide-image" style="background-image: url('img/fondo.png')">
+                                    </div>
+                                    <div class="slide-caption">
+                                    <h2>MASTERY</h2>
+                                    <p>Mastery takes a little time. Give your heart the sun light and grow carefuly.</p>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="slide">
+                                <a href="#" target="_blank">
+                                    <div class="slide-image" style="background-image: url('img/fondoTres.png')">
+                                    </div>
+                                    <div class="slide-caption">
+                                    <h2>PURPOSE</h2>
+                                    <p>People who can find a purpose can enjoy the life. As a result, it grows more than anyone, and will be able to contribute.</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="slide-controller">
+                                <div class="slide-control-left">
+                                <div class="slide-control-line"></div>
+                                <div class="slide-control-line"></div>
+                                </div>
+                                <div class="slide-control-right">
+                                <div class="slide-control-line"></div>
+                                <div class="slide-control-line"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                            
                 </div>
             </div>
-        
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-                </a>
+
+            <!--PRESENTACION-->
+            <div class="row justify-content-center my-row my-bgContent">
+                <div class="col-5 my-col justify-content-center justyOne fontCurse">
+                    <h5 class="">TITULO 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ad velit impedit. Ipsam odio inventore iste accusamus, adipisci commodi earum doloremque aspernatur soluta culpa?</p>
+                </div>
+                <div class="col-2">
+                    <nav class="imgLogoCenter">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/LogoClanArgA2.png" width="164" height="164" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-5 my-col fontCurse">
+                    <h5 class="">TITULO 2</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus obcaecati quos. Repellat, omnis eaque commodi maxime mollitia, eligendi ut quos, molestiae laborum quia nisi?</p>
+                </div>
             </div>
-            
+            <!--CONTENIDO DOS-->
+            <div class="row my-row">
+                <div class="col my-col justyOneLetter">
+                    <h5>TITULO 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium facere dolor, debitis, alias suscipit assumenda nam dolore labore quod adipisci quos mollitia molestias rem officia voluptate possimus sit quisquam.</p>
+                </div>
+            </div>
+            <!--CONTENIDO TRES-->
+            <div class="row my-row my-bgTres">
+                <div class="col my-col">
+                    <h5>TITULO 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto magnam molestiae iste laudantium sed quia ea, quaerat nostrum sit rem voluptatibus nobis nisi praesentium!</p>
+                </div>
+                <div class="col my-col">
+                    <h5>TITULO 2</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ratione dolor cumque consequatur adipisci magni voluptate provident, tempora veritatis! Nam tenetur distinctio magnam autem alias.</p>
+                </div>
+                <div class="col my-col">
+                    <h5>TITULO 3</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae doloremque cupiditate est earum odit aliquam ipsam in, pariatur ex molestias quidem aliquid fugit sapiente debitis!</p>
+                </div>
+            </div>
+            <!--CONTENIDO CUATRO-->
+            <div class="row my-row my-bgCuatro">
+                <div class="col-10 my-col">
+                    <nav class="imgLogo">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" width="110" height="70" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-2 my-col my-bgCuatroDe">
+
+                </div>
+            </div>
+            <!--CONTENIDO CINCO-->
+            <div class="row my-row ">
+                <div class="col my-col my-bgCincoIz my-bgCinco">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/about.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="app/information.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="app/blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="app/gallery.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">foro</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 2</h5>
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 3</h5>
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 4</h5>
+                </div>
+            </div>
+            <!--FOOTER-->
+            <div class="row my-row my-bgSeis ">
+                <div class="col my-col">
+                    <P>Copyright © 2018. Clan ArgA. Todos los derechos Reservados | Desarrollado por: Mirlino Mariñez </P>
+                </div>
+            </div>
+
+        </div>    
+
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         
+            <script type="text/javascript">
+        
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+        
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+           
+
+          
+
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
