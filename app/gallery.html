@@ -5,31 +5,176 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
         <!--link href="font/Purista Bold.otf" rel="stylesheet"--> 
         <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
 
         <title>ArgA 2018</title>
+        <style>
+            .my-container {
+                border: 1px solid green;
+            }
+
+            .my-row {
+                border: 3px solid red;
+            }
+
+            .my-col {
+                border: 3px dotted blue;
+            }
+
+        </style>
+
     </head>
     <body>
-        <div class="main-head">
-            <div class="header">
-                <a href="#default" class="logo"><img src="../img/logo.svg" height="60" width="105"></a>
-            </div> 
-            <div class="header-right">
-                <a href="../index.html">INICIO</a>
-                <a href="about.html">SOBRE</a>
-                <a href="information.html">INFORMACION</a>
-                <a href="blog.html">BLOG</a>
-                <a class="active" href="#gallery">GALERIA</a>
-                <a href="https://foro.clanarga.com.ar/index.php">FORO</a>
-            </div>
-        </div>
-               
         
+        <!--ACTUALIZACION a BOOTSTRAP 4-->
+        <div class="container-fluid">
+            <!--ACTUALIZACION CABECERA CON BOOTSTRAP 4-->
+            <div class="row d-flex align-content-start flex-wrap my-row row-bgNav">
+                <div class="col-lg-6 my-bgOne my-col col-md-12">
+                    <nav class="imgLogo">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/logo.svg" width="105" height="70" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-lg-6 my-col my-bgTwo col-md-12 ">
+                    <ul class="nav justify-content-end order-md-12 aling-self-start">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="information.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FORO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <!--CONTENIDO TRES-->
+            <div class="row my-row my-bgTres">
+                    <div class="col my-col">
+                        <h5>TITULO 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto magnam molestiae iste laudantium sed quia ea, quaerat nostrum sit rem voluptatibus nobis nisi praesentium!</p>
+                    </div>
+                    <div class="col my-col">
+                        <h5>TITULO 2</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ratione dolor cumque consequatur adipisci magni voluptate provident, tempora veritatis! Nam tenetur distinctio magnam autem alias.</p>
+                    </div>
+                    <div class="col my-col">
+                        <h5>TITULO 3</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae doloremque cupiditate est earum odit aliquam ipsam in, pariatur ex molestias quidem aliquid fugit sapiente debitis!</p>
+                    </div>
+                </div>
+
+                 <!--PRESENTACION-->
+            <div class="row justify-content-center my-row my-bgContent">
+                    <div class="col-5 my-col justify-content-center justyOne fontCurse">
+                        <h5 class="">TITULO 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ad velit impedit. Ipsam odio inventore iste accusamus, adipisci commodi earum doloremque aspernatur soluta culpa?</p>
+                    </div>
+                    <div class="col-2">
+                        <nav class="imgLogoCenter">
+                            <a class="navbar-brand" href="#">
+                                <img src="../img/LogoClanArgA2.png" width="164" height="164" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="col-5 my-col fontCurse">
+                        <h5 class="">TITULO 2</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus obcaecati quos. Repellat, omnis eaque commodi maxime mollitia, eligendi ut quos, molestiae laborum quia nisi?</p>
+                    </div>
+                </div>
+
+            <!--CONTENIDO DOS-->
+            <div class="row my-row">
+                <div class="col my-col justyOneLetter">
+                    <h5>TITULO 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium facere dolor, debitis, alias suscipit assumenda nam dolore labore quod adipisci quos mollitia molestias rem officia voluptate possimus sit quisquam.</p>
+                </div>
+            </div>
+            
+            <!--CONTENIDO CUATRO-->
+            <div class="row my-row my-bgCuatro">
+                <div class="col-10 my-col">
+                    <nav class="imgLogo">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/logo.svg" width="110" height="70" alt="">
+                        </a>
+                    </nav>
+                </div>
+                <div class="col-2 my-col my-bgCuatroDe">
+
+                </div>
+            </div>
+            <!--CONTENIDO CINCO-->
+            <div class="row my-row ">
+                <div class="col my-col my-bgCincoIz my-bgCinco">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="information.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">foro</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 2</h5>
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 3</h5>
+                </div>
+                <div class="col my-col my-bgCincoDe">
+                    <h5>CONTENIDO 4</h5>
+                </div>
+            </div>
+            <!--FOOTER-->
+            <div class="row my-row my-bgSeis ">
+                <div class="col my-col">
+                    <P>Copyright © 2018. Clan ArgA. Todos los derechos Reservados | Desarrollado por: Mirlino Mariñez </P>
+                </div>
+            </div>
+
+        </div>    
+
+            
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="../js/jquery.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
         <script src="../js/main.js"></script>
     </body>
 </html>

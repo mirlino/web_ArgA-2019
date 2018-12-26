@@ -33,7 +33,7 @@ body {
 .header {
   overflow: hidden;
   background-color: #43A6DF;
-  padding: 10px 25px;
+  padding: 10px 20px;
   text-align: left;
   float: left;
     
@@ -114,6 +114,61 @@ body {
   background-color: #F8B853;
   color: white;
 }
+
+/*===========================NAVBAR BOOTSTRAP===========================================*/
+
+.my-bgOne {
+  background-color: #43A6DF !important;
+  
+}
+
+.my-bgTwo {
+  background-color: #fff !important;
+  /*background-image: url('../img/WhiteLabel.png');*/
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+}
+
+.my-bgTwo li a {
+  padding: 35px 10px;
+  text-decoration: none;
+  color: #43A6DF;
+  text-transform: uppercase;
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 1.25rem;
+}
+
+.my-bgTwo li a:hover {
+  background-color: #F8B853 !important;
+  color: #fff;
+}
+
+.imgLogo {
+  padding: 10px 15px;
+}
+
+.row-bgNav {
+  background-color: #43A6DF !important;
+}
+
+.my-bgContent {
+  /*background: #43A6DF !important;*/
+  background-image: url('../img/BgContent.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+}
+
+.nav-item a.active {
+  background-color: #F8B853;
+  color: white;
+  background-size: 100%;
+}
+
+/*======================== FIN NAVBAR BOOTSTRAP =============================================*/
+
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 /*@media screen and (max-width: 900px) {
@@ -294,6 +349,8 @@ ul, ol {
   overflow: hidden;
 }
 
+/*============================== REVESTIMIENTO AL SLIDE ============================================*/
+
 .row-slider::before {
   right: -50%;
 }
@@ -309,15 +366,158 @@ ul, ol {
   width: 100%;
   z-index: 1;
 }
+/*============================= FIN ==============================================================*/
 
 .carousel-control-next {
   z-index: 2;
 }
 
 
-/*PHONES*/
-@media screen and (max-width: 860px){
+/*==================================CONTENIDO UNO=============================================*/
+.fontCurse h5{
+  color: #FFF;
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+
+}
+
+.fontCurse p{
+  color: #FFF;
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 18px;
+
+}
+
+.justyOneLetter {
+  text-align: center;
+}
+
+/*=======================================================================================*/
+
+/*====================================CONTENIDO DOS========================================================*/
+
+.imgLogoCenter {
+  padding: 10px 60px;
+}
+
+.justyOneLetter h5 {
+  font-size: 24px;
+  font-family: 'Purista_Bold', sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.justyOneLetter p {
+  font-size: 18px;
+  font-family: 'Purista_Bold', sans-serif;
+  color: #FFF;
+  text-align: center;
+
+}
+
+/*=======================================================================================*/
+
+/*===================================CONTENIDO TRES========================================*/
+
+.my-bgTres {
+  background-image: url('../img/textureArgablanca.png');
+
+}
+
+.my-bgTres h5{
+  font-size: 24px;
+  font-family: 'Purista_Bold', sans-serif;
+  color: #006393;
+  text-transform: uppercase;
+}
+
+.my-bgTres p{
+  font-size: 18px;
+  font-family: 'Purista_Bold', sans-serif;
+  color: #03283D;
+  text-align: left;
+}
+
+/*=======================================================================================*/
+
+/*==================================CONTENIDO CUATRO=====================================*/
+
+.my-bgCuatro {
+  background-color: #13567D;
+
+}
+
+.my-bgCuatroDe {
+  background-color: #30749B;
+}
+
+/*=======================================================================================*/
+
+/*==================================CONTENIDO CINCO=====================================*/
+
+.my-bgCinco li a {
+  /*padding: 35px 10px;*/
+  text-decoration: none;
+  color: #43A6DF;
+  text-transform: uppercase;
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 1.25rem;
+}
+
+.my-bgCinco li a:hover {
+  background-color: #F8B853 !important;
+  color: #fff;
+}
+
+
+.my-bgCincoIz {
+  background-color: #FFF;
+}
+
+.my-bgCincoDe {
+  background-color: #30749B;
+}
+
+.my-bgCincoDe h5 {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/*=======================================================================================*/
+
+/*==================================FOOTER=====================================*/
+.my-bgSeis {
+  background-color: #03283D;
+}
+
+.my-bgSeis p {
+  font-size: 14px;
+  color: #FFF;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+/*=======================================================================================*/
+
+
+
+/*=============================================================MOBILE FIRST=====================================================================*/
+
+
+/*======================================1240PX=================================================*/
+@media screen and (max-width: 1240px){
   
+  .my-bgTwo {
+    background-color: #fff !important;
+  }
+
   .header {
     padding: 20px;
     float: none;
@@ -405,6 +605,53 @@ ul, ol {
 
 }
 
+/*======================================1240PX=================================================*/
+
+@media screen and (max-width: 1240px){
+  
+  .my-bgTwo li a {
+    font-size: 1.125rem;
+  }
+}
+
+/*======================================1125PX=================================================*/
+@media screen and (max-width: 1135px){
+  
+  .my-bgTwo li a {
+    font-size: 1rem;
+  }
+}
+
+/*======================================1040PX=================================================*/
+@media screen and (max-width: 1050px){
+  
+  .my-bgTwo li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 990px){
+  
+  .imgLogo {
+    text-align: center;
+  }
+
+  .justify-content-end {
+
+  }
+
+  .my-bgTwo li a {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .my-bgTwo li {
+    text-align: center !important;
+  }
+
+}
+
+/*
 @media screen and (max-width: 768px){
 
   .header-right {
@@ -435,12 +682,12 @@ ul, ol {
 
   .header {
     
-      /* Reverse the axis of the header, making it vertical. */
+      /* Reverse the axis of the header, making it vertical. 
       flex-direction: column;
       
-      /* Align items to the begining (the left) of the header. */
+      /* Align items to the begining (the left) of the header. 
       align-items: flex-start;
-      
+  /*    
   }
 
   .header a{
@@ -472,3 +719,4 @@ ul, ol {
 
 
 }
+*/
