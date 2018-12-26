@@ -3,7 +3,7 @@ Proyecto: plantilla web para la actualización de página en 2019.
 
 ![template](https://img.shields.io/badge/status-En%20Progreso-red.svg)
 ![techs](https://img.shields.io/badge/tech-HTML--JS--CSS-yellow.svg)
-![template](https://https://img.shields.io/badge/New-Bootstrap%204-purple.svg)
+![techs](https://https://img.shields.io/badge/New-Bootstrap%204-purple.svg)
 
 ---
 
