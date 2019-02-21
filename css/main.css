@@ -678,21 +678,72 @@ body {
 }
 
 .my-bgTres img {
-  border: 5px solid #f2ead7;
-  height: 200px;
-  width: 300px;
+  border: 5px solid #03283D;
   margin-bottom: 20px;
 }
 
-.my-bgTres button {
+.my-bgTres .btn-primary {
   background-color: #006397 !important;
   border-radius: 0;
+  font-family: 'Purista', sans-serif;
+
 }
 
-.my-bgTres button:hover {
-  background-color: #03283D; !important;
+.my-bgTres .btn-primary:hover {
+  background-color: #03283D !important;
 }
 
 .card-body {
   background-color: #03283D;
 }
+
+.card-body h3{
+  font-family: 'Purista', sans-serif;
+}
+
+.card-body p{
+  font-family: 'Purista', sans-serif;
+}
+
+.my-title-text h4{
+  font-family: 'Purista_bold', sans-serif;
+  color: #fff;
+  font-size: 2.10rem;
+}
+
+.my-title-text p{
+  font-family: 'Purista', sans-serif;
+  color: #fff;
+  font-size: 1.10rem;
+}
+
+/* FOOTER */
+
+.my-bgSeis p{
+  font-family: 'Purista_light', sans-serif;
+}
+
+.my-bgCuatroDe::before {
+  background: #30749B;
+  content: "";
+  height: 105px;
+  left: -24px;
+  position: absolute;
+  top: 18px;
+  transform: rotate(22deg);
+  width: 100px;
+}
+
+@media screen and (max-width: 991px){
+  .my-bgCuatroDe::before {
+    background: #30749B;
+    content: "";
+    height: 0px;
+    left: 0px;
+    position: absolute;
+    top: 40px;
+    transform: rotate(22deg);
+    width: 4px;
+  }
+}
+
