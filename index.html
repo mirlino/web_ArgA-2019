@@ -20,7 +20,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
 
         <title>ArgA 2018</title>
-        
+        <style>
+            /*
+            .my-container {
+                border: 1px solid green;
+            }
+
+            .my-row {
+                border: 3px solid red;
+            }
+
+            .my-col {
+                border: 3px dotted blue;
+            }
+            */
+        </style>
+
     </head>
     <body>
         <div class="container-fluid ">
@@ -55,8 +70,8 @@
             </header>
 
             <!--SLIDE-->
-            <div class="row my-row">
-                <div class="col-12 my-col">
+            <div class="row my-row ">
+                <div class="col-12 my-col slide-bg">
                     <div class="slide-window">
                         <div class ="wrapper row-slider"><!--capa-->
                             <div class="slide-wrapper" style="width: 300%;">
@@ -107,41 +122,42 @@
             </div>
 
             <!--PRESENTACION-->
-            <div class="row justify-content-center my-row my-bgContent">
-                <div class="col-12 col-md-5 my-col justify-content-center justyOne fontCurse preS1">
+            <div class="row justify-content-center my-row my-bgContent pb-2 pt-2">
+                <div class="col-12 col-md-5 my-col text-left justyOne fontCurse preS1">
                     <h5 class="">TITULO 1</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ad velit impedit. Ipsam odio inventore iste accusamus,</p>
                 </div>
-                <div class="col-12 col-md-2 d-none d-sm-block d-print-none">
+                <div class="col-12 col-md-2 justify-content-center d-none d-md-block d-print-none pt-2">
                     <nav class="imgLogoCenter">
-                        <a class="navbar-brand logoC" href="#">
+                        <a class="navbar-brand logoC text-center" href="#">
                             <img src="img/LogoClanArgA2.png" >
                         </a>
                     </nav>
                 </div>
-                <div class="col-12 col-md-5 my-col fontCurse preS1 preS1-left">
+                <div class="col-12 col-md-5 my-col text-right fontCurse preS1 preS1-left">
                     <h5>TITULO 2</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus obcaecati quos. Repellat,</p>
                 </div>
             </div>
+
             <!--CONTENIDO DOS-->
             <div class="row my-row">
-                <div class="col my-col justyOneLetter">
+                <div class="col my-col justyOneLetter pb-3 mt-4">
                     <h5>TITULO 1</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium facere dolor, debitis, alias suscipit assumenda nam dolore labore quod adipisci quos mollitia molestias rem officia voluptate possimus sit quisquam.</p>
                 </div>
             </div>
             <!--CONTENIDO TRES-->
-            <div class="row my-row my-bgTres">
-                <div class="col-12 col-md-4 my-col">
+            <div class="row my-row my-bgTres mt-md-3 pt-3 py-sm-4">
+                <div class="col-12 col-md-4 my-col mt-3">
                     <h5>TITULO 1</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto magnam molestiae iste laudantium sed quia ea, quaerat nostrum sit rem voluptatibus nobis nisi praesentium!</p>
                 </div>
-                <div class="col-12 col-md-4  my-col">
+                <div class="col-12 col-md-4  my-col mt-3">
                     <h5>TITULO 2</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ratione dolor cumque consequatur adipisci magni voluptate provident, tempora veritatis! Nam tenetur distinctio magnam autem alias.</p>
                 </div>
-                <div class="col-12 col-md-4 my-col">
+                <div class="col-12 col-md-4 my-col mt-3">
                     <h5>TITULO 3</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae doloremque cupiditate est earum odit aliquam ipsam in, pariatur ex molestias quidem aliquid fugit sapiente debitis!</p>
                 </div>
@@ -159,64 +175,39 @@
             </div>
 
             <!--CONTENIDO CINCO-->
-            <div class="row my-row ">
-                <!--
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoIz my-bgCinco">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="app/about.html">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="app/information.html">INFORMACION</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="app/blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="app/gallery.html">GALERIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">foro</a>
-                        </li>
-                    </ul>    
+            <div class="row my-row">
+                <div class="navegacion col-sm-12 col-md-3 my-bgCincoIz my-bgCinco pt-2">
+                    <nav class="nav-principal navbar-expand-md navbar-light bg-faded pt-2 pb-2">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_footer" aria-label="Mostrar navegación" >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="#" class="navbar-brand d-none">ArgA Clan</a>
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse w-100" id="menu_footer">
+                                <ul class="nav nav-justified flex-column flex-row">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link">Noticia</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link">Galeria</a></li>
+                                    <li class="nav-item"><a href="" class="nav-link">Foro</a></li>
+                                </ul>
+                            </div><!--.collapse-->
+                        </div><!--.container-fluid-->
+                    </nav>
                 </div>
-            -->
-            <div class="navegacion col-sm-12 col-md-3 my-bgCincoIz my-bgCinco">
-                <nav class="nav-principal navbar-expand-md navbar-light bg-faded pt-2 pb-2">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_footer" aria-label="Mostrar navegación" >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href="#" class="navbar-brand d-none">ArgA Clan</a>
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse w-100" id="menu_footer">
-                            <ul class="nav nav-justified flex-column flex-row">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Noticia</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Galeria</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Foro</a></li>
-                            </ul>
-                        </div><!--.collapse-->
-                    </div><!--.container-fluid-->
-                </nav>
-            </div>
-
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
+                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe pt-3">
                     <h5>CONTENIDO 2</h5>
                 </div>
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
+                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe pt-3">
                     <h5>CONTENIDO 3</h5>
                 </div>
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
+                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe pt-3">
                     <h5>CONTENIDO 4</h5>
                 </div>
             </div>
             <!--FOOTER-->
             <div class="row my-row my-bgSeis ">
-                <div class="col my-col">
+                <div class="col my-col text-center">
                     <P>Copyright © 2018. Clan ArgA. Todos los derechos Reservados | Desarrollado por: Mirlino Mariñez </P>
                 </div>
             </div>

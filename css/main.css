@@ -156,9 +156,10 @@ body {
   /*background: #43A6DF !important;*/
   background-image: url('../img/BgContent.svg');
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
 }
+
 
 .nav-item a.active {
   background-color: #F8B853;
@@ -172,6 +173,10 @@ body {
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 920px) {
+
+  .my-bgContent {
+
+  }
  
   .logoC img {
     width: 140px;
@@ -201,9 +206,17 @@ body {
 @media screen and (min-width: 769px) {
  
   .logoC img {
-    width: 140px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     /*padding-left: 20px;*/
+
+  }
+  .preS1 h5 {
+    font-size: .83rem;
+  }
+
+  .preS1 p {
+    font-size: .20rem;
   }
 }
 
@@ -220,7 +233,7 @@ body {
   */
 
   .logoC img {
-    width: 105px;
+    width: 98px;
     height: 100px;
     /*padding-left: 20px;*/
   }
@@ -247,24 +260,24 @@ body {
 @media screen and (max-width: 620px) {
  
   .logoC img {
-    width: 95px;
+    width: 65px;
     height: 78px;
     padding-left: 20px;
   }
   
 }
-
+/*
 @media screen and (max-width: 575px) {
  
   .my-bgContent {
     /*background: #43A6DF !important;*/
-    background-image: url('');
+   /* background-image: url('');
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100%;
   }
 }
-
+*/
 
 
 
@@ -278,125 +291,6 @@ body {
   }
 }
 /*==================================FIN DEL HEADER=============================*/
-
-
-/*==================================INICIO DEL SLIDE=============================*/
-/*
-ul, ol {
-  list-style: none;
-
-}
-
-.slideshow {
-  width: 100%;
-  position: relative;
-}
-
-.slider li, ul {
-  width: 100%;
-}
-
-.slider li{
-  overflow: hidden;
-}
-
-.slider li img{
-  width: 100%;
-}
-
-.slider li .lucid {
-  position: absolute;
-  display: flex;
-  justify-content: right;
-  width: 1400px;
-  height: 100%;
-  top: 0;
-  margin-left: 26.4%;
-  z-index: 1;
-  
-}
-
-.slider .caption {
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 15px 50px;
-  color: #FFF;
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  margin: 140px -50px;
-  align-items: right;
-  text-align: right;
-  flex-direction: column;
-  z-index: 2;
-}
-
-.pagination{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  margin: 20px -90px;
-  z-index: 3;
-  
-}
-
-.pagination li{
-  font-size: 15px;
-  margin: 2px 5px;
-  color: #858585;
-  cursor: pointer;
-}
-
-.left, .right {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-
-  color: rgb(109, 109, 109);
-  font-size: 50px;
-  z-index: 4;
-  cursor: pointer;
-}
-
-.left {
-  left: 10px;
-
-}
-
-.left:hover {
-  color: rgb(182, 181, 181);
-
-}
-
-.right:hover {
-  color: rgb(182, 181, 181);
-
-}
-
-.right {
-  right: 10px;
-}
-
-.slider .caption h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-  font-family: 'Purista_Bold', sans-serif;
-  font-weight: bold;
-}
-
-.slider .caption p {
-  margin-top: 0px;
-  font-size: 20px;
-  font-family: 'Purista_Bold', sans-serif;
-}
 
 /*BOOTSTRAP*/
 .bg-colored {
@@ -446,23 +340,11 @@ ul, ol {
 }
 
 /*============================== REVESTIMIENTO AL SLIDE ============================================*/
-/*
-.row-slider::before {
-  right: -50%;
+
+.slide-bg {
+  background-color: #000;
 }
 
-.row-slider::before {
-  background: rgba(0, 0, 0, 0.7);
-  content: "";
-  display: block;
-  height: 100.1%;
-  position: absolute;
-  right: -60%;
-  transform: skewX(-22deg);
-  width: 100%;
-  z-index: 1;
-}
-*/
 .carousel-control-next {
   z-index: 2;
 }
@@ -725,32 +607,9 @@ ul, ol {
 }
 */
 /*======================================1040PX=================================================*/
-/*
-@media screen and (max-width: 1050px){
-  
-  .my-bgTwo li a {
-    font-size: 0.875rem;
-  }
-}
-*/
-@media screen and (max-width: 990px){
-/*  
-  .imgLogo {
-    text-align: center;
-  }
-  */
-/*
-  .imgLogoCenter a{
-    text-align: center;
-  }
-*/
-/*
-  .imgLogoCenter img {
-    width: 115px;
-    height: 110px;
 
-  }
-*/
+@media screen and (max-width: 990px){
+
   .preS1 h5 {
     font-size: 1.25rem;
   }
