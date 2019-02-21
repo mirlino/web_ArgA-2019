@@ -1,305 +1,333 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
-        <!-- Custom Design-->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> 
-        
-        <!--link href="font/Purista Bold.otf" rel="stylesheet"--> 
-        <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Add Your HTML here -->
+    <header class="encabezado-sitio container">
+      <div class="row justify-content-md-between ">
+        <div class="col-lg-4">
+          <a href="index.html">
+            <img src="img/logo.svg" class="img-fluid mx-auto d-block pt-4 pb-4">
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <nav class="sociales text-center text-lg-right">
+            <ul>
+              <li><a href="http://facebook.com"><span class="sr-only">Facebook</span></a></li>
+              <li><a href="http://twitter.com"><span class="sr-only">Twitter</span></a></li>
+              <li><a href="http://instagram.com"><span class="sr-only">Instagram</span></a></li>
+              <li><a href="http://pinterest.com"><span class="sr-only">Pinterest</span></a></li>
+              <li><a href="http://youtube.com"><span class="sr-only">Youtube</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+    </header>
 
-        <title>ArgA 2019</title>
-        <style>
-            /*
-            .my-container {
-                border: 1px solid green;
-            }
+    <div class="navegacion mt-3 py-1">
+      <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
+        <!--Menu Responsive aquí-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar Navegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand d-lg-none">Carolina Spa</a>
+        <div class="container">
+          <div class="collapse navbar-collapse w-100" id="nav_principal">
+            <ul class="nav nav-justified flex-column w-100 flex-sm-row">
+              <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Nosotros</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Servicios</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Productos</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Contactos</a></li>
+            </ul>
+          </div><!--.Collapse-->
+        </div><!--.Container-->
+      </nav>
+    </div>
 
-            .my-row {
-                border: 3px solid red;
-            }
+    <!--Slider-->
+    <div class="container">
+      <div id="slider-principal" class="carousel slide mt-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slider-principal" data-slide-to="0" class="active"></li>
+          <li data-target="#slider-principal" data-slide-to="1"></li>
+          <li data-target="#slider-principal" data-slide-to="2"></li>
+        </ol>
 
-            .my-col {
-                border: 3px dotted blue;
-            }
-            */
-        </style>
-
-    </head>
-    <body>
-        <div class="container-fluid ">
-            <!--NAVEGADOR CABECERA-->
-            <header class="encabezado-sitio">
-                <div class="row my-row">
-                    <div class=" col-12 col-lg-6 my-bgOne text-center text-md-center text-lg-left pl-lg-5">
-                        <a href="index.html">
-                            <img src="img/logo.svg" width="98" height="110">
-                        </a>
-                    </div>
-                    <div class="navegacion col-12 col-lg-6 my-col my-bgTwo">
-                        <nav class="nav-principal navbar-expand-md navbar-light bg-faded pt-2 pb-2">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_page" aria-label="Mostrar navegación" >
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a href="#" class="navbar-brand d-none">ArgA Clan</a>
-                            <div class="container-fluid">
-                                <div class="collapse navbar-collapse w-100" id="menu_page">
-                                    <ul class="nav nav-justified flex-column w-100 flex-md-row">
-                                        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">Noticia</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">Galeria</a></li>
-                                        <li class="nav-item"><a href="" class="nav-link">Foro</a></li>
-                                    </ul>
-                                </div><!--.collapse-->
-                            </div><!--.container-fluid-->
-                        </nav>
-                    </div>
-                </div>
-            </header>
-
-            <!--SLIDE-->
-            <div class="row my-row ">
-                <div class="col-12 my-col slide-bg">
-                    <div class="slide-window">
-                        <div class ="wrapper row-slider"><!--capa-->
-                            <div class="slide-wrapper" style="width: 300%;">
-                                <div class="slide">
-                                <a href="#" target="_blank">
-                                    <div class="slide-image" style="background-image: url('img/fondoDos.png')">
-                                    </div>
-                                    <div class="slide-caption">
-                                    <h2>INICIO 1</h2>
-                                    <p>Always keep the sun in your heart.</p>
-                                    </div>
-                                </a>
-                                </div>
-                                <div class="slide">
-                                <a href="#" target="_blank">
-                                    <div class="slide-image" style="background-image: url('img/fondo.png')">
-                                    </div>
-                                    <div class="slide-caption">
-                                    <h2>MASTERY</h2>
-                                    <p>Mastery takes a little time. Give your heart the sun light and grow carefuly.</p>
-                                    </div>
-                                </a>
-                                </div>
-                                <div class="slide">
-                                <a href="#" target="_blank">
-                                    <div class="slide-image" style="background-image: url('img/fondoTres.png')">
-                                    </div>
-                                    <div class="slide-caption">
-                                    <h2>PURPOSE</h2>
-                                    <p>People who can find a purpose can enjoy the life. As a result, it grows more than anyone, and will be able to contribute.</p>
-                                    </div>
-                                </a>
-                                </div>
-                            </div>
-                            <div class="slide-controller">
-                                <div class="slide-control-left">
-                                <div class="slide-control-line"></div>
-                                <div class="slide-control-line"></div>
-                                </div>
-                                <div class="slide-control-right">
-                                <div class="slide-control-line"></div>
-                                <div class="slide-control-line"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="img/slide_01.jpg" alt="Nuestras Instalaciones">
+            <div class="carousel-caption">
+              <h3 class="text-uppercase">Nuevas Instalaciones</h3>
             </div>
-
-            <!--PRESENTACION-->
-            <div class="row justify-content-center my-row my-bgContent pb-md-2 pt-md-2">
-                <div class="col-12 col-md-5 my-col text-md-left text-center justyOne fontCurse preS1 mt-3">
-                    <h5 class="">TITULO 1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ad velit impedit. Ipsam odio inventore iste accusamus,</p>
-                </div>
-                <div class="col-12 col-md-2 justify-content-center pt-2">
-                    <nav class="imgLogoCenter">
-                        <a class="navbar-brand logoC text-center" href="#">
-                            <img src="img/LogoClanArgA2.png" >
-                        </a>
-                    </nav>
-                </div>
-                <div class="col-12 col-md-5 my-col text-center text-md-right fontCurse preS1  mt-3">
-                    <h5>TITULO 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus obcaecati quos. Repellat,</p>
-                </div>
+          </div><!--.carousel-item-->
+          <!--Item2-->
+          <div class="carousel-item">
+            <img src="img/slide_02.jpg" alt="Conoce nuestros servicios">
+            <div class="carousel-caption">
+              <h3 class="text-uppercase">Conoce nuestros servicios</h3>
             </div>
-
-            <!--CONTENIDO DOS-->
-            
-                        <div class="row py-5">
-                          <div class="col-md-3 mb-4">
-                            <div class="card">
-                              <a href="#">
-                                <img class="card-img-top" src="img/fondoCuatro.png">
-                                <div class="card-body">
-                                  <h3 class="card-title text-center text-uppercase">SDO. Ejemplo 1</h3>
-                                  <p class="card-text text-uppercase">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tenetur.
-                                  </p>
-                                  <p class="precio mb-0 lead text-center"></p>
-                                </div>
-                              </a>
-                            </div><!--.card-->
-                          </div><!--.col-md-3-->
-                  
-                          <div class="col-md-3 mb-4">
-                            <div class="card">
-                              <a href="#">
-                                <img class="card-img-top" src="img/fondo.png">
-                                <div class="card-body">
-                                  <h3 class="card-title text-center text-uppercase">SDO. Ejemplo 2</h3>
-                                  <p class="card-text text-uppercase">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, animi!
-                                  </p>
-                                  <p class="precio mb-0 lead text-center"></p>
-                                </div>
-                              </a>
-                            </div><!--.card-->
-                          </div><!--.col-md-3-->
-                  
-                          <div class="col-md-3 mb-4">
-                            <div class="card">
-                              <a href="#">
-                                <img class="card-img-top" src="img/fondoDos.png">
-                                <div class="card-body">
-                                  <h3 class="card-title text-center text-uppercase">SDO. Ejemplo 3</h3>
-                                  <p class="card-text text-uppercase">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, molestias.
-                                  </p>
-                                  <p class="precio mb-0 lead text-center"></p>
-                                </div>
-                              </a>
-                            </div><!--.card-->
-                          </div><!--.col-md-3-->
-                  
-                          <div class="col-md-3 mb-4">
-                            <div class="card">
-                              <a href="#">
-                                <img class="card-img-top" src="img/fondoTres.png">
-                                <div class="card-body">
-                                  <h3 class="card-title text-center text-uppercase">SDO. Ejemplo 4</h3>
-                                  <p class="card-text text-uppercase">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, eaque.
-                                  </p>
-                                  <p class="precio mb-0 lead text-center"></p>
-                                </div>
-                              </a>
-                            </div><!--.card-->
-                          </div><!--.col-md-3-->
-                        </div><!--.row-->
-
-                    
-            
-            <!--CONTENIDO TRES-->
-            <div class="row my-row my-bgTres mt-md-3 pt-3 py-sm-4">
-                <div class="titulo-pres col-12 col-md-4 my-col mt-3">
-                    <h4 class="text-uppercase">Bienvenido al clan</h4><br>
-                    <img src="img/fondo.png" >
-                    <p class="text-justify">Bienvenido al clan donde Podras simular en uno de los clanes mas grandes en latinoamerica</p>
-                    <button class="btn btn-primary" type="button">Más</button>
-                </div>
-                <div class="titulo-pres col-12 col-md-4  my-col mt-3">
-                    <h4 class="text-uppercase">Noticias y eventos</h4>
-                    <ul class="my-hr-Personal">
-                        <li class="format-standard">
-                            <a href="#" title="Entrenamiento Granadero">Entrenamiento Granadero</a>
-                            <br><span>01/02/2019</span>
-                        </li>
-                        <li class="format-standard">
-                            <a href="#" title="Entrenamiento Granadero">Entrenamiento Granadero</a>
-                            <br><span>01/02/2019</span>
-                        </li>
-
-                        <li class="format-standard">
-                            <a href="#" title="Entrenamiento Granadero">Entrenamiento Granadero</a>
-                            <br><span>01/02/2019</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="titulo-pres col-12 col-md-4 my-col mt-3 ">
-                    <h4 class="text-uppercase">¿pOR QUE CON NOSOTROS?</h4>
-                    <h5>1- Entrenamientos</h5>
-                    <p class="text-justify">No es necesario que Sepas Arma 3, nosotros Impartimos constrantes entrenamientos para que aprendas a como simular junto a nosotros.</p>
-                    <br>
-                    <h5>2- Misiones</h5>
-                    <p class="text-justify">Una gran cantidad de misiones diariamente que aran que no puedas dejar de simular con una gran camaraderia.</p>
-                    <br>
-                    <h5>3- Scensos</h5>
-                    <p class="text-justify">Ascensos para quienes demuestren de que son capaces de hacer y muestren un gran compromiso y dedicación en su oficio.</p>
-                    <br>
-                </div>
+          </div><!--.carousel-item-->
+          <!--Item3-->
+          <div class="carousel-item">
+            <img src="img/slide_03.jpg" alt="Promoción">
+            <div class="carousel-caption">
+              <h3 class="text-uppercase">Nuevo sitio web 2x1 en todos nuestros servicios</h3>
             </div>
-            <!--CONTENIDO CUATRO-->
-            <div class="row my-row my-bgCuatro text-center text-lg-left pl-lg-5">
-                <div class="col-md-12 col-lg-11 my-col">
-                    <nav class="">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo.svg" width="110" height="70" alt="">
-                        </a>
-                    </nav>
-                </div>
-                <div class="col-1 my-col my-bgCuatroDe hidden-lg-print "></div>
-            </div>
+          </div><!--.carousel-item-->
+        </div><!--.carousel-inner-->
+        <a href="#slider-principal" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#slider-principal" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+      </div>
+    </div>
 
-            <!--CONTENIDO CINCO-->
-            <div class="row my-row">
-               
-                <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-3">
-                    <h5>CONTENIDO 2</h5>
-                </div>
-                <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-3">
-                    <h5>CONTENIDO 3</h5>
-                </div>
-                <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-3">
-                    <h5>CONTENIDO 4</h5>
-                </div>
-            </div>
-            <!--FOOTER-->
-            <div class="row my-row my-bgSeis ">
-                <div class="col my-col text-center">
-                    <P>Copyright © 2019. Clan ArgA. Todos los derechos Reservados | Desarrollado por: Mirlino Mariñez </P>
-                </div>
-            </div>
-        </div>    
-       
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        
-            <script type="text/javascript">
-        
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-36251023-1']);
-            _gaq.push(['_setDomainName', 'jqueryscript.net']);
-            _gaq.push(['_trackPageview']);
-        
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <section class="nuevo-sitio py-5">
+      <h1 class="text-center text-uppercase mt-4 encabezado">
+        <span class="text-lowercase d-block">Bienvenido a nuestro</span> sitio web
+      </h1>
+      <p class="text-center mt-4">Te sentiás como nuevo(a) con nuestros <br>masajistas profesionales.</p>
+    </section>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 text-center mb-4">
+          <div class="imagen-servicio">
+            <img src="img/servicio_01.jpg" class="img-fluid">
+            <div class="row no-gutters justify-content-center">
+              <div class="col-md-10 pt-4 servicio-info">
+                <h2 class="text-center text-uppercase encabezado">
+                  <span class="text-lowercase d-block">Conoce sobre</span> nosotros
+                </h2>
+                <a href="#" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+              </div>
+            </div><!--.row-->
+          </div><!--.imagen-destacada-->
+        </div><!--.col-md-4-->
+
+        <div class="col-md-4 text-center mb-4">
+          <div class="imagen-servicio">
+            <img src="img/servicio_02.jpg" class="img-fluid">
+            <div class="row no-gutters justify-content-center">
+              <div class="col-md-10 pt-4 servicio-info">
+                <h2 class="text-center text-uppercase encabezado">
+                  <span class="text-lowercase d-block">Nuestros</span> servicios
+                </h2>
+                <a href="#" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+              </div>
+            </div><!--.row-->
+          </div><!--.imagen-destacada-->
+        </div><!--.col-md-4-->
+
+        <div class="col-md-4 text-center mb-4">
+          <div class="imagen-servicio">
+            <img src="img/servicio_03.jpg" class="img-fluid">
+            <div class="row no-gutters justify-content-center">
+              <div class="col-md-10 pt-4 servicio-info">
+                <h2 class="text-center text-uppercase encabezado">
+                  <span class="text-lowercase d-block">Visita nuestra</span> tienda
+                </h2>
+                <a href="#" class="btn btn-primary btn-block text-uppercase mt-4 py-3">Leer más</a>
+              </div>
+            </div><!--.row-->
+          </div><!--.imagen-destacada-->
+        </div><!--.col-md-4-->
+      </div>
+    </div>
+
+    <div class="horario">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <h2 class="text-center text-uppercase mt-5">Horarios:</h2>
+            <p class="text-center mt-3 lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas velit beatae tempora? Facilis necessitatibus doloribus quaerat cumque rem? Quis.
+            </p>
+            <table class="table table-hover text-center mt-3">
+              <thead>
+                <tr>
+                  <th class="text-center">Día</th>
+                  <th class="text-center">De</th>
+                  <th class="text-center">Hasta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lunes</td>
+                  <td>09:00</td>
+                  <td>19:00</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>09:00</td>
+                  <td>19:00</td>
+                </tr>
+                <tr>
+                  <td>Miércoles</td>
+                  <td>09:00</td>
+                  <td>19:00</td>
+                </tr>
+                <tr>
+                  <td>Jueves</td>
+                  <td>09:00</td>
+                  <td>19:00</td>
+                </tr>
+                <tr>
+                  <td>Viernes</td>
+                  <td>09:00</td>
+                  <td>19:00</td>
+                </tr>
+                <tr>
+                  <td>Sábado</td>
+                  <td>10:00</td>
+                  <td>14:00</td>
+                </tr>
+                <tr>
+                  <td>Domingo</td>
+                  <td>Cerrado</td>
+                  <td>Cerrado</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6 bg-horario"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="productos container py-5">
+      <h2 class="encabezado text-center text-uppercase">
+        <span class="text-lowercase d-block">Nuestros</span> productos
+      </h2>
+      <div class="row py-5">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="img/producto_mini_01.jpg">
+              <div class="card-body">
+                <h3 class="card-title text-center text-uppercase">Producto 1</h3>
+                <p class="card-text text-uppercase">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tenetur.
+                </p>
+                <p class="precio mb-0 lead text-center">$15</p>
+              </div>
+            </a>
+          </div><!--.card-->
+        </div><!--.col-md-3-->
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="img/producto_mini_02.jpg">
+              <div class="card-body">
+                <h3 class="card-title text-center text-uppercase">Producto 2</h3>
+                <p class="card-text text-uppercase">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, animi!
+                </p>
+                <p class="precio mb-0 lead text-center">$15</p>
+              </div>
+            </a>
+          </div><!--.card-->
+        </div><!--.col-md-3-->
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="img/producto_mini_03.jpg">
+              <div class="card-body">
+                <h3 class="card-title text-center text-uppercase">Producto 3</h3>
+                <p class="card-text text-uppercase">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, molestias.
+                </p>
+                <p class="precio mb-0 lead text-center">$15</p>
+              </div>
+            </a>
+          </div><!--.card-->
+        </div><!--.col-md-3-->
+
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="#">
+              <img class="card-img-top" src="img/producto_mini_04.jpg">
+              <div class="card-body">
+                <h3 class="card-title text-center text-uppercase">Producto 4</h3>
+                <p class="card-text text-uppercase">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, eaque.
+                </p>
+                <p class="precio mb-0 lead text-center">$15</p>
+              </div>
+            </a>
+          </div><!--.card-->
+        </div><!--.col-md-3-->
+      </div><!--.row-->
+    </section>
+
+
+    <div class="citas container-fluid py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 text-center">
+          <h3 class="text-uppercase">Realiza una cita</h3>
+          <p class="mt-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi repellendus amet id ab vitae autem?
+          </p>
+          <a href="#" class="btn btn-primary text-uppercase mt-3 btn-lg">Leer más</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-sitio pt-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="text-uppercase text-center pb-4">Nosotros</h3>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam fuga officiis illum maxime, recusandae ullam exercitationem, quis quas dicta, in vel officia minus amet!
+            </p>
+          </div><!--.col-md-4-->
+
+          <div class="col-md-4 text-center">
+            <h3 class="text-uppercase pb-4">Horario</h3>
+            <p>Lun-Vie: 9 AM - 7 PM</p>
+            <p>Sábado: 10 AM - 2 PM</p>
+            <p>Domingo: Cerrado</p>
+          </div><!--.col-md-4-->
+
+          <div class="col-md-4 text-center">
+            <h3 class="text-uppercase text-center pb-4">Contacto</h3>
+            <p>66 East Sunnyslope Avenue </p>
+            <p>Lansdowne, PA 19050</p>
+            <nav class="sociales text-center">
+              <ul>
+                <li><a href="http://facebook.com"><span class="sr-only">Facebook</span></a></li>
+                <li><a href="http://twitter.com"><span class="sr-only">Twitter</span></a></li>
+                <li><a href="http://instagram.com"><span class="sr-only">Instagram</span></a></li>
+                <li><a href="http://pinterest.com"><span class="sr-only">Pinterest</span></a></li>
+                <li><a href="http://youtube.com"><span class="sr-only">Youtube</span></a></li>
+              </ul>
+            </nav>
+          </div> <!--.col-md-4-->
+          <hr class="w-100">
+          <p class="text-center copyright w-100">Carolina Spa & Salon 2019. Todos los derechos reservados</p>
+        </div> <!--.row-->
+      </div> <!--.container-->
+    </footer>
+
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
