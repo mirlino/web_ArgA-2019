@@ -4,6 +4,15 @@
   font-family: "Purista_Bold";
   src: url("../font/Purista\ Bold.otf");
 }
+@font-face {
+  font-family: "Purista_light";
+  src: url("../font/Purista\ Light.otf");
+}
+@font-face {
+  font-family: "Purista";
+  src: url("../font/Purista\ Medium.otf");
+}
+
 
 *{
   margin: 0;
@@ -234,7 +243,7 @@ body {
 
   .logoC img {
     width: 98px;
-    height: 100px;
+    height: 88px;
     /*padding-left: 20px;*/
   }
 
@@ -260,8 +269,8 @@ body {
 @media screen and (max-width: 620px) {
  
   .logoC img {
-    width: 65px;
-    height: 78px;
+    width: 108px;
+    height: 85px;
     padding-left: 20px;
   }
   
@@ -282,14 +291,6 @@ body {
 
 
 
-@media screen and (max-width: 360px) {
- 
-  .logoC img {
-    width: 85px;
-    height: 78px;
-    
-  }
-}
 /*==================================FIN DEL HEADER=============================*/
 
 /*BOOTSTRAP*/
@@ -586,27 +587,6 @@ body {
 
 }
 
-/*======================================1240PX=================================================*/
-/*
-@media screen and (max-width: 1240px){
-  
-  .my-bgTwo li a {
-    font-size: 1.125rem;
-  }
-}
-*/
-
-
-/*======================================1125PX=================================================*/
-/*
-@media screen and (max-width: 1135px){
-  
-  .my-bgTwo li a {
-    font-size: 1rem;
-  }
-}
-*/
-/*======================================1040PX=================================================*/
 
 @media screen and (max-width: 990px){
 
@@ -644,74 +624,75 @@ body {
 
 }
 
-/*
-@media screen and (max-width: 768px){
+.titulo-pres h4 {
+  font-family: 'Purista_Bold', sans-serif;
+  color:#03283D;
+  font-size: 1.60rem;
+}
 
-  .header-right {
-    position: relative;
-    background-color: #FFF;
-    background-size: 1000px;
-    padding-right: 23%;
-    text-align: center;
-    float: left;
-        
-        
-  }
+.titulo-pres h5 {
+  font-family: 'Purista_Bold', sans-serif;
+  font-size: 1.10rem;
+}
 
-  .header-right a {
-    float: left;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px 5px;
-    margin: 0px 2px;
-    font-size: 18px;
-    font-family: 'Purista_Bold', sans-serif;
-  }
+.titulo-pres p {
+  font-size: 1.10rem;
+  font-family: 'Purista', sans-serif;
+  
+}
 
+
+/** NOTICIAS Y EVENTOS**/
+
+.my-hr-Personal ul {
+  list-style: none;
 
 }
 
-@media screen and (max-width: 320px){
-
-  .header {
-    
-      /* Reverse the axis of the header, making it vertical. 
-      flex-direction: column;
-      
-      /* Align items to the begining (the left) of the header. 
-      align-items: flex-start;
-  /*    
-  }
-
-  .header a{
-    float: none;
-    text-align: left;
-  }
-
-
-  .header-right {
-    position: relative;
-    background-color: #FFF;
-    background-size: 1000px;
-    padding-right: 2%;
-    text-align: left;
-    float: left;
-        
-        
-  }
-
-  .header-right a {
-    float: left;
-    text-align: left;
-    text-decoration: none;
-    padding: 20px 5px;
-    margin: 0px 2px;
-    font-size: 14px;
-    font-family: 'Purista_Bold', sans-serif;
-  }
-
+.my-hr-Personal a {
+  text-decoration: none;
+  font-family: 'Purista', sans-serif;
+  font-size: 1.5rem;
+  color: #03283D;
 
 }
-*/
 
-/*===============================================slider=======================================================================*/
+.my-hr-Personal a:hover {
+  color: #006397;
+}
+
+.my-hr-Personal span {
+  font-family: 'Purista', sans-serif;
+  font-size: 0.83rem;
+}
+
+.my-hr-Personal .format-standard {
+  padding: 20px;
+}
+
+.format-standard {
+  background: url("../img/decor01.gif") repeat-x scroll 0 100% transparent;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.my-bgTres img {
+  border: 5px solid #f2ead7;
+  height: 200px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.my-bgTres button {
+  background-color: #006397 !important;
+  border-radius: 0;
+}
+
+.my-bgTres button:hover {
+  background-color: #03283D; !important;
+}
+
+.card-body {
+  background-color: #03283D;
+}
