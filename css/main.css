@@ -722,16 +722,26 @@ body {
 .my-bgSeis p{
   font-family: 'Purista_light', sans-serif;
 }
-
-.my-bgCuatroDe::before {
+/*
+#back-to-top:before {
   background: #30749B;
   content: "";
-  height: 105px;
-  left: -24px;
+  height: 140px;
+  left: -36px;
   position: absolute;
-  top: 18px;
-  transform: rotate(22deg);
-  width: 100px;
+  top: 6px;
+  transform: rotate(26deg);
+  width: 70px;
+  z-index: 1;
+}
+*/
+#back-to-top i {
+  float: left;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  
+  
 }
 
 @media screen and (max-width: 991px){
@@ -742,8 +752,19 @@ body {
     left: 0px;
     position: absolute;
     top: 40px;
-    transform: rotate(22deg);
+    transform: rotate(1deg);
     width: 4px;
   }
 }
 
+.my-bgTwo::before {
+  background: url("../img/WhiteLabel.png");
+  content: "";
+  display: block;
+  left: -90px;
+  position: absolute;
+  top: 0;
+  width: 90px;
+  z-index: 1;
+  height: 100%;
+}
