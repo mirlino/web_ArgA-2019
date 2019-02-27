@@ -15,6 +15,7 @@
 
         <title>ArgA 2018</title>
         <style>
+            /*
             .my-container {
                 border: 1px solid green;
             }
@@ -26,49 +27,44 @@
             .my-col {
                 border: 3px dotted blue;
             }
-
+            */
         </style>
 
     </head>
     <body>
-        
-        <!--ACTUALIZACION a BOOTSTRAP 4-->
-        <div class="container-fluid">
-            <!--ACTUALIZACION CABECERA CON BOOTSTRAP 4-->
-            <div class="row d-flex align-content-start flex-wrap my-row row-bgNav">
-                <div class="col-lg-6 my-bgOne my-col col-md-12">
-                    <nav class="imgLogo">
-                        <a class="navbar-brand" href="#">
-                            <img src="../img/logo.svg" width="105" height="70" alt="">
+        <div class="container-fluid ">
+            <!--NAVEGADOR CABECERA-->
+            <header class="encabezado-sitio">
+                <div class="row my-row">
+                    <div class=" col-12 col-lg-6 my-bgOne text-center text-md-center text-lg-left pl-lg-5">
+                        <a href="index.html">
+                            <img src="../img/logo.svg" width="98" height="110">
                         </a>
-                    </nav>
+                    </div>
+                    <div class="navegacion col-12 col-lg-6 my-col my-bgTwo">
+                        <nav class="nav-principal navbar-expand-md navbar-light bg-faded pt-2 pb-2">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_page" aria-label="Mostrar navegación" >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a href="#" class="navbar-brand d-none">ArgA Clan</a>
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse w-100" id="menu_page">
+                                    <ul class="nav nav-justified flex-column w-100 flex-md-row">
+                                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                                        <li class="nav-item"><a href="../app/about.html" class="nav-link">Nosotros</a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link active">Blog</a></li>
+                                        <li class="nav-item"><a href="gallery.html" class="nav-link">Galería</a></li>
+                                        <li class="nav-item"><a href="https://foro.clanarga.com.ar" class="nav-link">Foro</a></li>
+                                    </ul>
+                                </div><!--.collapse-->
+                            </div><!--.container-fluid-->
+                        </nav>
+                    </div>
                 </div>
-                <div class="col-lg-6 my-col my-bgTwo col-md-12 ">
-                    <ul class="nav justify-content-end order-md-12 aling-self-start">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="information.html">INFORMACION</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link active" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">GALERIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FORO</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </header>
            
             <!--CONTENIDO TRES-->
-            <div class="row my-row my-bgTres">
+            <div class="row my-row my-bgTres py-4">
                 <div class="col-12 col-md-4 my-col">
                     <h5>TITULO 1</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iusto magnam molestiae iste laudantium sed quia ea, quaerat nostrum sit rem voluptatibus nobis nisi praesentium!</p>
@@ -84,94 +80,71 @@
             </div>
 
             <!--PRESENTACION-->
-            <div class="row justify-content-center my-row my-bgContent">
-                <div class="col-12 col-md-5 my-col justify-content-center justyOne fontCurse preS1">
-                    <h5 class="">TITULO 1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ad velit impedit. Ipsam odio inventore iste accusamus,</p>
+            <div class="row justify-content-center my-row my-bgContent pb-md-2 pt-md-2">
+                <div class="col-12 col-md-5 my-col text-md-left text-center justyOne fontCurse preS1 mt-3">
+                    <h5 class="text-uppercase">Aspirante</h5>
+                    <p>Es quién ingresa nuevo a nuestras filas e inicia su carrera en el oficio con entrenamiento y luego tomando un entrenamiento final para ascender y ser parte de nosotros.</p>
                 </div>
-                <div class="col-12 col-md-2">
+                <div class="col-12 col-md-2 justify-content-center pt-2">
                     <nav class="imgLogoCenter">
-                        <a class="navbar-brand logoC" href="#">
-                            <img src="../img/LogoClanArgA2.png" width="164" height="164" alt="">
+                        <a class="navbar-brand logoC text-center" href="#">
+                            <img src="../img/LogoClanArgA2.png" >
                         </a>
                     </nav>
                 </div>
-                <div class="col-12 col-md-5 my-col fontCurse preS1 preS1-left">
-                    <h5 class="">TITULO 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus obcaecati quos. Repellat,</p>
+                <div class="col-12 col-md-5 my-col text-center text-md-right fontCurse preS1  mt-3">
+                    <h5 class="text-uppercase">Miembro</h5>
+                    <p>Una vez ascendido y siendo ya miembro podrás disfrutar de múltiples beneficios que solo un miembro tendrá como privilegio dentro de la organización.</p>
                 </div>
             </div>
 
-            <!--CONTENIDO DOS-->
-            <div class="row my-row">
-                <div class="col my-col justyOneLetter">
-                    <h5>TITULO 1</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium facere dolor, debitis, alias suscipit assumenda nam dolore labore quod adipisci quos mollitia molestias rem officia voluptate possimus sit quisquam.</p>
-                </div>
-            </div>
             
             <!--CONTENIDO CUATRO-->
-            <div class="row my-row my-bgCuatro">
-                <div class="col-10 my-col">
-                    <nav class="imgLogo">
-                        <a class="navbar-brand" href="#">
-                            <img src="../img/logo.svg" width="110" height="70" alt="">
-                        </a>
-                    </nav>
+            <div class="row my-row my-bgCuatro text-center text-lg-left pl-lg-5">
+                    <div class="col-12 pt-2 my-col pb-2 justify-content-center">
+                        <nav class="">
+                            <a class="navbar-brand" href="#">
+                                <img src="../img/logo.svg" width="110" height="70" alt="">
+                            </a>
+                        </nav>
+                    </div>
+                    
                 </div>
-                <div class="col-2 my-col my-bgCuatroDe">
-
+        
+                <!--CONTENIDO CINCO-->
+                <div class="row my-row text-center justify-content-center">
+                    <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-4 pb-5">
+                        <h5 class="text-uppercase">Nuestros Aliados</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-4 pb-5">
+                        <h5 class="text-uppercase">contactos</h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 my-col my-bgCincoDe pt-4 pb-5">
+                        <h5 class="text-uppercase">Siguenos</h5>
+                        <div class="text-block follow-us">
+                            <p>
+                                <a href="#"><img class="alignone size-full wp-image-53" src="../img/facebook.png" alt="facebook" width="44" height="44"></a>
+                                <a href="#"><img class="alignone size-full wp-image-53" src="../img/youtube.png" alt="facebook" width="44" height="44"></a>
+                                <a href="#"><img class="alignone size-full wp-image-53" src="../img/instagram.jpg" alt="facebook" width="44" height="44"></a>
+                            </p>
+                        </div>
+    
+                    </div>
                 </div>
-            </div>
-            <!--CONTENIDO CINCO-->
-            <div class="row my-row ">
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoIz my-bgCinco">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="information.html">INFORMACION</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">GALERIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">foro</a>
-                        </li>
-                    </ul>    
+                <!--FOOTER-->
+                <div class="row Copyright my-row my-bgSeis">
+                    <div class="col my-col text-center">
+                        <P class="text-muted">Copyright © 2019. Clan ArgA. Todos los derechos Reservados | plantilla por: <a href="http://mirlino-web.com">Mirlino Mariñez</a> </P>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
-                    <h5>CONTENIDO 2</h5>
-                </div>
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
-                    <h5>CONTENIDO 3</h5>
-                </div>
-                <div class="col-sm-12 col-md-3 my-col my-bgCincoDe">
-                    <h5>CONTENIDO 4</h5>
-                </div>
-            </div>
-            <!--FOOTER-->
-            <div class="row my-row my-bgSeis ">
-                <div class="col my-col">
-                    <P>Copyright © 2018. Clan ArgA. Todos los derechos Reservados | Desarrollado por: Mirlino Mariñez </P>
-                </div>
-            </div>
-
-        </div>    
-
+            </div>    
+    
             
         
         
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="../js/jquery.min.js" ></script>
+        <script src="../js/popper.js"></script>
+        <script src="../css/bootstrap.min.css"></script>
         <script src="../js/jquery.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>

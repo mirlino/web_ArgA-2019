@@ -167,6 +167,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  
 }
 
 
@@ -269,9 +270,9 @@ body {
 @media screen and (max-width: 620px) {
  
   .logoC img {
-    width: 108px;
-    height: 85px;
-    padding-left: 20px;
+    width: 98px;
+    height: 90px;
+    
   }
   
 }
@@ -437,7 +438,49 @@ body {
   color: #03283D;
   text-align: left;
 }
+/*767*/
 
+@media screen and (max-width: 767px){
+
+  .imgb-center a {
+    margin-left: 28%;
+  }
+}
+
+@media screen and (max-width: 575px){
+
+  .imgb-center a {
+    margin-left: 22%;
+  }
+}
+
+@media screen and (max-width: 455px){
+
+  .imgb-center a {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 390px){
+
+  .imgb-center a {
+    margin-left: 9%;
+  }
+}
+
+@media screen and (max-width: 383px){
+
+  .imgb-center a {
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 342px){
+
+  .imgb-center a {
+    margin-left: 2%;
+  }
+}
 /*=======================================================================================*/
 
 /*==================================CONTENIDO CUATRO=====================================*/
