@@ -129,6 +129,7 @@ body {
 .my-bgOne {
   background-color: #43A6DF !important;
   
+  
 }
 
 .my-bgTwo {
@@ -146,6 +147,7 @@ body {
   text-transform: uppercase;
   font-family: 'Purista_Bold', sans-serif;
   font-size: 1.19rem;
+  
 }
 
 .my-bgTwo li a:hover {
