@@ -813,3 +813,9 @@ body {
   z-index: 1;
   height: 100%;
 }
+
+.my-bgCincoDe h4 {
+  font-family: 'Purista', sans-serif;
+  color: #fff;
+  font-size: 1.10rem;
+}
