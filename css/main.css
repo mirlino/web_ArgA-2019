@@ -278,21 +278,6 @@ body {
   }
   
 }
-/*
-@media screen and (max-width: 575px) {
- 
-  .my-bgContent {
-    /*background: #43A6DF !important;*/
-   /* background-image: url('');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 100%;
-  }
-}
-*/
-
-
-
 
 /*==================================FIN DEL HEADER=============================*/
 
@@ -301,37 +286,39 @@ body {
   background-color: #43A6DF;
 }
 
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size:cover;
-  background-size: cover;
-}
+
 
 .carousel-caption{
-  bottom: 270px;
+  bottom: 20%;
+  left: 5%;
 }
 
-.carousel-indicators{
-  top: 20px;
-  
-}
+
 .carousel-caption h5 {
   font-size: 45px;
-  text-transform: uppercase;
+ 
   font-family: 'Purista_Bold', sans-serif;
   letter-spacing: 2px;
-  margin-top: 25px;
 
 }
 
 .carousel-caption p{
-  width: 75%;
+  
   margin: auto;
   font-size: 18px;
   font-family: 'Purista_Bold', sans-serif;
   line-height: 1.9;
+}
+
+.carousel-indicators{
+ 
+  height: 7%;
+  position: absolute;
+  right: 20% !important;
+  bottom: 88%;
+  
+  margin-right: -85%!important;
+  
 }
 
 .wrapper {
@@ -657,12 +644,7 @@ body {
   .justify-content-end {
 
   }
-/*
-  .my-bgTwo li a {
-    font-size: 1.25rem;
-    text-align: center;
-  }
-*/
+
   .my-bgTwo li {
     text-align: center !important;
   }
@@ -767,19 +749,7 @@ body {
 .my-bgSeis p{
   font-family: 'Purista_light', sans-serif;
 }
-/*
-#back-to-top:before {
-  background: #30749B;
-  content: "";
-  height: 140px;
-  left: -36px;
-  position: absolute;
-  top: 6px;
-  transform: rotate(26deg);
-  width: 70px;
-  z-index: 1;
-}
-*/
+
 #back-to-top i {
   float: left;
   font-size: 30px;
@@ -819,3 +789,66 @@ body {
   color: #fff;
   font-size: 1.10rem;
 }
+
+
+.container-fluid {
+  padding-right: 0!important;
+    
+}
+
+.row {
+  margin-right: 0!important;
+}
+
+.carousel-item {
+  height: 100% !important;
+}
+
+
+/**SLIDER Y CONTENIDO DEL MISMO **/
+
+@media screen and (max-width: 550px){
+  .carousel-item {
+    height: 100% !important;
+  }
+
+  .my-rowP .row {
+    padding-right: 0!important;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .my-rowP .col-12 {
+    padding-right: -1!important;
+  }
+}
+
+.bg-contenido {
+  background-color: #000;
+}
+
+.bg-second::after {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  display: block;
+  height: 100.1%;
+  position: absolute;
+  right: -60%;
+  transform: skewX(-22deg);
+  width: 100%;
+  z-index: 3;
+}
+
+.carousel-control-next {
+  z-index: 4;
+}
+
+.bg-three .active iframe {
+z-index: 5;
+  
+}
+
+
+
+
+
