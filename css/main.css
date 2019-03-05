@@ -312,12 +312,11 @@ body {
 
 .carousel-indicators{
  
-  height: 7%;
-  position: absolute;
-  right: 20% !important;
-  bottom: 88%;
-  
-  margin-right: -85%!important;
+ height: 7%;
+ position: absolute;
+ padding-left: 65%;
+ bottom: 88%;
+ align-items: flex-end;
   
 }
 
