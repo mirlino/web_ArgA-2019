@@ -312,11 +312,11 @@ body {
 
 .carousel-indicators{
  
-height: 7%;
-position: absolute;
-padding-left: 65%;
-bottom: 88%;
-align-items: flex-end;
+  height: 7%;
+  position: absolute;
+  padding-left: 65%;
+  bottom: 88%;
+  align-items: flex-end;
   
 }
 
@@ -847,7 +847,19 @@ z-index: 5;
   
 }
 
+/**TITULO DE LA NOTICIA**/
 
+.titulo-text h5 {
+  font-size: 2.50rem;
+}
+
+
+
+@media screen and (max-width: 360px){
+  .titulo-text h5 {
+    font-size: 1.50rem;
+  }
+}
 
 
 
