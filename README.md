@@ -8,7 +8,7 @@ Proyecto: plantilla web para la actualización de página en 2019.
 ---
 
 ### Contenido y características
-- Plantilla Web En construcción
+- Plantilla Web Terminada
 
 
 ### Tecnologías usadas
@@ -19,4 +19,4 @@ La Página está estructurada utilizando
 
 ### Muestra de página live
 
-Status página live de presentación: [`Plantilla`](https://mirlino.github.io/web_ArgA/)
+Página live de presentación: [`Plantilla`](https://mirlino.github.io/web_ArgA/)
